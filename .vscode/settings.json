@@ -1,0 +1,7 @@
+{
+    "files.autoSaveWhenNoErrors": true,
+    "files.autoSaveWorkspaceFilesOnly": true,
+    "files.autoSave": "onWindowChange",
+    "editor.formatOnSave": true,
+    "files.autoSaveDelay": 500
+}

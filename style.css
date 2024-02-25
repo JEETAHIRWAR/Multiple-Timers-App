@@ -1,0 +1,279 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container>h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 50px;
+    color: azure;
+}
+
+.noTimers {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: normal;
+    text-align: left;
+    color: azure;
+    letter-spacing: 1.5px;
+}
+
+.timeLabel {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: normal;
+    text-align: left;
+    color: azure;
+    letter-spacing: 1.5px;
+}
+
+.timerSetContainer {
+    width: 849px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #34344A;
+}
+
+.timeLabel {
+    margin-right: 100px;
+}
+
+.timeInput {
+    width: 80px;
+    padding-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    font-style: normal;
+    border: none;
+    outline: none;
+    background: none;
+    color: whitesmoke;
+}
+
+.timeInputs {
+    width: 80px;
+    padding-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    font-style: normal;
+    border: none;
+    outline: none;
+    background: none;
+    color: whitesmoke;
+}
+
+.timeInput::placeholder {
+    color: azure !important;
+    margin-left: 20px;
+}
+
+.timeInputs::placeholder {
+    color: red;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+}
+
+.shake {
+    animation: shake 1s ease-in-out infinite;
+}
+
+
+.separator {
+    font-size: 22px;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"] {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.Button {
+    background-color: #F9F07A;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 124px;
+    height: 42px;
+    border-radius: 26px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    color: #34344A;
+}
+
+.Button:hover {
+    background-color: #34344A;
+    color: #F9F07A;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #F9F07A;
+}
+
+
+.CurrentTimer {
+    font-family: "Roboto", sans-serif;
+    width: 220px;
+    font-weight: 600;
+    font-style: normal;
+    margin: 30px 10px 30px 10px;
+    color: azure;
+    letter-spacing: 1px;
+    font-size: 22px;
+    background-color: #35374ba6;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.updateHhMmSs {
+    margin: 0 0px 0 0px;
+    color: whitesmoke;
+    margin-left: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    font-style: normal;
+}
+
+.timeIsUp {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 280px;
+    color: #34344A;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .timerSetContainer {
+        width: 350px;
+        height: 100px;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #34344A;
+    }
+
+    .timeInput {
+        width: 50px;
+        padding-left: 0px !important;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        font-style: normal;
+        border: none;
+        outline: none;
+        background: none;
+        color: whitesmoke;
+        margin-left: 20px !important;
+    }
+
+    .timeInputs {
+        width: 50px;
+        padding-left: 0px !important;
+        font-family: "Roboto", sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        font-style: normal;
+        border: none;
+        outline: none;
+        background: none;
+        color: whitesmoke;
+        margin-left: 20px !important;
+    }
+
+
+
+    .timeLabel {
+        width: 100%;
+        font-weight: 300;
+        font-size: 14px;
+        font-style: normal;
+        text-align: left;
+        color: azure;
+        letter-spacing: 1px;
+        margin-right: -60px !important;
+        margin-bottom: 80px;
+        flex-direction: row;
+    }
+
+
+    .timeIsUp {
+        width: 250% !important;
+        margin: 40px 0px 40px 0px;
+        padding: 0px 10px 0px 20px;
+    }
+
+    .Button {
+        width: 100%;
+        height: 25px;
+        padding: 0px;
+        margin: 10px !important;
+        font-size: 14px;
+    }
+
+    .updateHhMmSs {
+        margin: 0 20px 0 0px;
+        color: whitesmoke;
+        margin-left: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    .separator {
+        color: whitesmoke;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+    }
+
+}
